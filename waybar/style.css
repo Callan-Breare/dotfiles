@@ -1,0 +1,99 @@
+* {
+  border: none;
+  border-radius: 0px;
+  min-height: 0px;
+  margin: 0px 0px;
+  padding: 0px;
+}
+
+#waybar {
+  background: #1e222a; /* fallback colour */
+  background-color: rgba(25,25,25,0.5); /*last number sets the opacity, 0 is clear 1 is full colour*/
+  color: #eeeeef;
+  font-size: 16px;
+  font-family: "Fira Code Nerd Font";
+}
+
+#workspaces button {
+  color: #eeeeef;
+}
+/* Fix: active workspace doesn't show up */
+/* #workspaces button.focused { */
+#workspaces button.active {
+  color: #fa5aa4;
+}
+
+/*Main Styling*/
+#custom-powermenu,
+#cpu,
+#workspaces,
+#temperature,
+#memory,
+#clock,
+#pulseaudio,
+#window,
+#custom-steam,
+#custom-discord,
+#custom-thunderbird,
+#tray{
+  padding: 2px 8px;
+  background-color: rgba(30,36,43,0.8); /*#303643; */
+  margin: 4px 4px;
+  border-radius: 8px;
+  color: #eeeeef;
+}
+
+/*Specific Styling*/
+#window {
+  color:  #ffffff; 
+}
+
+#custom-powermenu {
+  color: #e06c75;
+  padding-right: 12px;
+  margin-right: 8px;
+}
+
+
+#pulseaudio {
+  color: #0fb9b1;
+  padding-right: 14px;
+}
+
+#cpu {
+  color: #61afef;
+}
+
+#temperature {
+  color: #98c379;
+}
+
+#memory {
+  color: #e5c07b;
+}
+
+#workspaces{
+  padding-left: 5px;
+  padding-right: 4px;
+}
+
+#custom-steam,
+#custom-thunderbird,
+#custom-discord{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  padding: 0px 8px;
+}
+#custom-steam{
+  margin-left: 8px;
+  background-image: url('/home/cbreare/.config/waybar/icon_repo/tela-circle/steam.svg');
+}
+#custom-thunderbird{
+  background-image: url('/home/cbreare/.config/waybar/icon_repo/tela-circle/thunderbird.svg');
+}
+#custom-discord{
+  background-image: url('/home/cbreare/.config/waybar/icon_repo/tela-circle/discord.svg');
+}
+
+

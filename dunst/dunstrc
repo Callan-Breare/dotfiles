@@ -1,0 +1,24 @@
+[global]
+width = (0,400)  # Dynamic width
+padding = 10
+height = (0,400)
+timeout = 5
+#icon_position = left
+#icon_theme = Tela 
+history_length = 5
+corner_radius = 9
+gap_size = 4
+stack_duplicates = false
+#show_indicators = true
+#icon_path = "/home/cbreare/.local/share/icons/Tela/16/status/"
+#enable_recursive_icon_lookup = true
+max_icon_size = 20
+offset = 8x8
+notification_limit = 5
+monitor = 1
+sort = update
+# Fonts and colors
+font = Monospace 10
+background = "#282828"
+foreground = "#FFFFFF"
+frame_color = "#458588"

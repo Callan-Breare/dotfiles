@@ -1,0 +1,34 @@
+{
+    // Format Waybar
+    "layer": "middle",
+    "position": "top",
+    "margin-bottom": 0,
+    "height": 30,
+    
+
+    // Load Modules
+    "include": [
+        "$HOME/.config/waybar/modules.json",
+    ],
+
+    // Modules Left
+    "modules-left": [
+      "group/quicklinks",
+      "hyprland/workspaces",
+      "hyprland/window"
+      ],
+
+    // Modules Centre
+    "modules-center": [
+      "clock"
+      ],
+
+    //Modules Right
+    "modules-right": [
+      "tray",
+      "group/systeminfo",
+      "custom/powermenu",
+    ],
+
+}
+

@@ -1,0 +1,14 @@
+{
+  "layers": "top",
+  "position": "bottom",
+  "height": 40,
+  "width": 200,
+
+  "include": [
+    "$HOME/.config/waybar/modules.json",
+  ],
+  
+  "modules-centre": [
+        "clock",
+    ]
+}

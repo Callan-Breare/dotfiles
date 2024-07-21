@@ -1,0 +1,89 @@
+{    
+    // Custom Defined Groups
+    "group/quicklinks":{
+        "orientation": "horizontal",
+        "modules":[
+            "custom/steam",
+            "custom/discord",
+            "custom/thunderbird",
+          ],
+    },
+    "group/systeminfo":{
+      "orientation": "horizontal",
+      "modules":[
+        "temperature",
+        "cpu",
+        "memory",
+        "pulseaudio",
+      ],
+      "on-click": "exec plasma-systemmonitor"
+    },
+
+    // Custom Defined Modules
+    "custom/thunderbird": {
+      "format": " ",
+      "tooltip-format": "<tt>Thunderbird</tt>",
+      "on-click": "exec flatpak run org.mozilla.Thunderbird",
+    },
+    "custom/steam":{
+      "format": " ",
+      "tooltip-format": "<tt>Steam</tt>",
+      "on-click": "exec flatpak run com.valvesoftware.Steam",
+    },
+    "custom/discord":{
+        "format": " ",
+        "tooltip-format": "<tt>Discord</tt>",
+        "on-click": "exec flatpak run com.discordapp.Discord",
+    },
+    "tray": {
+      "icon-size": 20,
+      "spacing": 4,
+    },
+
+    // Built-in Modules
+    "temperature": {
+      "format": "{icon} {temperatureC}°C",
+      "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+      "critical-threshold": 80,
+      "format-icons": ["", "", ""],
+    },
+    "memory": {
+      "format": "\ue266 {}%",
+      "tooltip": "true"
+    },
+    "cpu": {
+      "format": "\uf2db {usage}%",
+      "tooltip": "true"
+    },
+    "custom/powermenu": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "exec wlogout -p layer-shell",
+    },
+    "pulseaudio": {
+      "format": "{volume}% {icon}",
+      "format-bluetooth": "{volume}% {icon}",
+      "format-muted": "",
+      "format-icons": {
+          "headphone": "",
+          "hands-free": "",
+          "headset": "",
+          "phone": "",
+          "portable": "",
+          "car": "",
+          "default": ["", ""]
+      },
+      "scroll-step": 2,
+      "on-click": "pavucontrol"
+    },
+    "clock": {
+      "format": "{:%d %B %H:%M}",
+      "interval": 60,
+      "tooltip-format": "<tt><big>{calendar}</big></tt>",
+    },
+    "hyprland/window": {
+        "max-length": 50,
+        "separate-outputs": true
+    }
+
+}
