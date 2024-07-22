@@ -33,7 +33,7 @@ Breeze-Dark theme pack installed to /usr/share/themes/
 3. Notifications
 ![dunst](dunst.png)
 4. Desktop
-![hyprland](hyprland.png)
+![hyprland](images/hyprland.png)
 
 
 
