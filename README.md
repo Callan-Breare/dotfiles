@@ -27,11 +27,11 @@ Breeze-Dark theme pack installed to /usr/share/themes/
 ### Final Product
 
 1. Wofi
-![wofi](wofi.png)
+![wofi](images/wofi.png)
 2. Waybar
-![waybar](waybar.png)
+![waybar](images/waybar.png)
 3. Notifications
-![dunst](dunst.png)
+![dunst](images/dunst.png)
 4. Desktop
 ![hyprland](images/hyprland.png)
 
