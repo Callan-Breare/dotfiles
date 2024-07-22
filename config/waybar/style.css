@@ -32,9 +32,9 @@
 #clock,
 #pulseaudio,
 #window,
-#custom-steam,
+/*#custom-steam,
 #custom-discord,
-#custom-thunderbird,
+#custom-thunderbird,*/
 #tray{
   padding: 2px 8px;
   background-color: rgba(30,36,43,0.8); /*#303643; */
@@ -65,7 +65,8 @@
 }
 
 #temperature {
-  color: #98c379;
+  /*color: #98c379;*/
+  color: #FF7F7F;
 }
 
 #memory {
@@ -80,20 +81,29 @@
 #custom-steam,
 #custom-thunderbird,
 #custom-discord{
+  background-color: rgba(30,36,43,0.8);
+  border-radius: 8px;
+  margin: 4px 4px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
-  padding: 0px 8px;
 }
 #custom-steam{
   margin-left: 8px;
-  background-image: url('/usr/share/icons/Tela/scalable/apps/steam.svg');
+  padding-left: 4px;
+  color: #A4E1FF;
+  /*background-image: url('/usr/share/icons/Tela/scalable/apps/steam.svg');*/
 }
 #custom-thunderbird{
-  background-image: url('/usr/share/icons/Tela/scalable/apps/thunderbird.svg');
+  padding-left: 4px;
+  color: #76f9ee;
+  /*background-image: url('/usr/share/icons/Tela/scalable/apps/thunderbird.svg');*/
 }
 #custom-discord{
-  background-image: url('/usr/share/icons/Tela/scalable/apps/discord.svg.svg');
+  padding-left: 4px;
+  padding-right: 2px;
+  color: #9CA6FF;
+  /*background-image: url('/usr/share/icons/Tela/scalable/apps/discord.svg');*/
 }
 
 

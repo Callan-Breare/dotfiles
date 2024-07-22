@@ -21,17 +21,17 @@
 
     // Custom Defined Modules
     "custom/thunderbird": {
-      "format": " ",
+      "format": "\uf370 ",
       "tooltip-format": "<tt>Thunderbird</tt>",
       "on-click": "exec flatpak run org.mozilla.Thunderbird",
     },
     "custom/steam":{
-      "format": " ",
+      "format": "\uf1b6 ",
       "tooltip-format": "<tt>Steam</tt>",
       "on-click": "exec flatpak run com.valvesoftware.Steam",
     },
     "custom/discord":{
-        "format": " ",
+        "format": "\uf1ff ",
         "tooltip-format": "<tt>Discord</tt>",
         "on-click": "exec flatpak run com.discordapp.Discord",
     },
