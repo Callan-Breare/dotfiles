@@ -87,13 +87,13 @@
 }
 #custom-steam{
   margin-left: 8px;
-  background-image: url('/home/cbreare/.config/waybar/icon_repo/tela-circle/steam.svg');
+  background-image: url('/usr/share/icons/Tela/scalable/apps/steam.svg');
 }
 #custom-thunderbird{
-  background-image: url('/home/cbreare/.config/waybar/icon_repo/tela-circle/thunderbird.svg');
+  background-image: url('/usr/share/icons/Tela/scalable/apps/thunderbird.svg');
 }
 #custom-discord{
-  background-image: url('/home/cbreare/.config/waybar/icon_repo/tela-circle/discord.svg');
+  background-image: url('/usr/share/icons/Tela/scalable/apps/discord.svg.svg');
 }
 
 
