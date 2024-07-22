@@ -23,6 +23,16 @@
   color: #fa5aa4;
 }
 
+/* Tooltips */
+tooltip {
+  background-color: rgba(30,36,43,0.8); /*#303643; */
+  border-radius: 8px;
+}
+
+tooltip label {
+  color: #eeeeef;
+}
+
 /*Main Styling*/
 #custom-powermenu,
 #cpu,
@@ -32,6 +42,7 @@
 #clock,
 #pulseaudio,
 #window,
+#disk,
 /*#custom-steam,
 #custom-discord,
 #custom-thunderbird,*/

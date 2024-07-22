@@ -55,6 +55,16 @@
       "format": "\uf2db {usage}%",
       "tooltip": "true"
     },
+    "disk#home":{
+      "format": "\uf015 {percentage_used}%",
+      "path": "/home/",
+      "tooltip": "true",
+    },
+    "disk#game":{
+      "format": "\uec17 {percentage_used}%",
+      "path": "/media/Drives/Games/",
+      "tooltip": "true",
+    },
     "custom/powermenu": {
       "format": "",
       "tooltip": false,
@@ -63,18 +73,12 @@
     "pulseaudio": {
       "format": "{volume}% {icon}",
       "format-bluetooth": "{volume}% {icon}",
-      "format-muted": "",
+      "format-muted": "{volume}% ",
       "format-icons": {
           "headphone": "",
-          "hands-free": "",
-          "headset": "",
-          "phone": "",
-          "portable": "",
-          "car": "",
           "default": ["", ""]
       },
       "scroll-step": 2,
-      "on-click": "pavucontrol"
     },
     "clock": {
       "format": "{:%d %B %H:%M}",
@@ -84,6 +88,16 @@
     "hyprland/window": {
         "max-length": 50,
         "separate-outputs": true
-    }
+    },
+
+    // taskbar
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 18,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        },
+    },
 
 }
