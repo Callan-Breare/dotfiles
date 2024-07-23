@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+exec /usr/lib/polkit-kde-authentication-agent-1 &
+
 # initialise wallpaper daemon
 swww-daemon &
 
