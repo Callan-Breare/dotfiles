@@ -26,7 +26,7 @@
 /* Tooltips */
 tooltip {
   background-color: rgba(30,36,43,0.8); /*#303643; */
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 tooltip label {
@@ -43,7 +43,6 @@ tooltip label {
 #pulseaudio,
 #window,
 #disk,
-#keyboard-state,
 /*#custom-steam,
 #custom-discord,
 #custom-thunderbird,*/
