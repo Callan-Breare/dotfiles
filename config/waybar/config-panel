@@ -25,7 +25,7 @@
 
     //Modules Right
     "modules-right": [
-      "tray",
+      "group/systemtray",
       "group/systeminfo",
       "custom/powermenu",
     ],
