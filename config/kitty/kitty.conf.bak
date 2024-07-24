@@ -34,6 +34,6 @@ tab_title_template "{index}: {title.replace('nvim', ' Neovim').replace('cbrar
 window_padding_width 0
 window_padding_height 0
 # BEGIN_KITTY_THEME
-# Tokyo Night Moon
+# Catppuccin-Mocha
 include current-theme.conf
 # END_KITTY_THEME
