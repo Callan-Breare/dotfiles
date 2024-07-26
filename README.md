@@ -22,7 +22,7 @@ Breeze-Dark theme pack installed to /usr/share/themes/
 - qt5
 - dunst
 - swww
-- plasma-meta
+- wlogout
 
 ### Final Product
 
