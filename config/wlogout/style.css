@@ -26,7 +26,7 @@ button:focus, button:active, button:hover {
 }
 
 #lock {
-    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+    background-image: image(url("/usr/share/icons/Tela/scalable/apps/lock.svg"), url("/home/cbreare/.local/share/icons/Tela/scalable/apps/lock.svg"));
 }
 
 #logout {
