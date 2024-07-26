@@ -5,7 +5,7 @@ Script needs to be ran as sudo**
 
 ## Assumptions
 Tela icon pack installed to /usr/share/icons/
-Breeze-Dark theme pack installed to /usr/share/themes/
+Breeze theme pack installed to /usr/share/themes/
 
 
 ## Usage
