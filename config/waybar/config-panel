@@ -13,21 +13,21 @@
 
     // Modules Left
     "modules-left": [
+      "custom/powermenu",
       "group/quicklinks",
       "hyprland/workspaces",
-      "hyprland/window"
+      "hyprland/window",
       ],
 
     // Modules Centre
     "modules-center": [
-      "clock"
+      "clock",
       ],
 
     //Modules Right
     "modules-right": [
       "group/systemtray",
       "group/systeminfo",
-      "custom/powermenu",
     ],
 
 }

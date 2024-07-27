@@ -11,7 +11,7 @@
   "group/systeminfo":{
     "orientation": "horizontal",
     "modules":[
-      "temperature",
+     // "temperature",
       "cpu",
       "memory",
       "pulseaudio",
