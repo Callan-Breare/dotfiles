@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
+#Authentication Agent to Interact with KDE applications
 exec /usr/lib/polkit-kde-authentication-agent-1 &
+
+#initialise idle lockout agent
+exec hypridle &
 
 # initialise wallpaper daemon
 swww-daemon &
