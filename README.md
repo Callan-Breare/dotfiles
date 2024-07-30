@@ -1,18 +1,17 @@
 # dotfiles
 
 **Designed to be used on Arch linux
-Script needs to be ran as sudo**
 
 ## Assumptions
-Tela icon pack installed to /usr/share/icons/
-Breeze theme pack installed to /usr/share/themes/
+Tela icon pack installed
+Breeze theme pack installed
 
 
 ## Usage
 
 1. clone the repository
 2. cd into dotfiles
-3. run `sudo ./install.sh`
+3. run `./install.sh`
 
 ## Dependencies
 - hyprland
@@ -37,4 +36,8 @@ Breeze theme pack installed to /usr/share/themes/
 
 
 
-
+# To Do
+1. Fully implement hyprlock
+2. Remove remaining KDE dependencies (looking at you kscreenlocker)
+3. Write a proper install script 
+4. Review comments in existing script/configs
