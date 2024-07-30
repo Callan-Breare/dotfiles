@@ -1,6 +1,6 @@
 # dotfiles
 
-**Designed to be used on Arch linux
+** Designed to be used on Arch linux
 
 ## Assumptions
 Tela icon pack installed
