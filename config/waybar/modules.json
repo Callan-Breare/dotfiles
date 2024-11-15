@@ -92,8 +92,8 @@
         "default": ["", ""]
     },
     "scroll-step": 2,
-    "on-click": "exec $HOME/Scripts/System/Audio/ChangeAudioOutput.sh 64",
-    "on-click-right": "exec $HOME/Scripts/System/Audio/ChangeAudioOutput.sh 59",
+    "on-click": "exec $HOME/Scripts/System/Audio/ChangeAudioOutput.sh NAVI",
+    "on-click-right": "exec $HOME/Scripts/System/Audio/ChangeAudioOutput.sh FAMILY",
   },
   "clock": {
     "format": "{:%d %B %H:%M}",

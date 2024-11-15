@@ -11,6 +11,7 @@ swww-daemon &
 
 # setting wallpaper
 bash $HOME/.config/hypr/scripts/continous/wallpaper.sh
+#exec hyprpaper &
 
 #network manager
 nm-applet --indicator &

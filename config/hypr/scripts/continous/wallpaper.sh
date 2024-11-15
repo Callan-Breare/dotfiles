@@ -1,11 +1,22 @@
 #!/bin/bash
-# Directory where your wallpapers are stored
-wallpaper_dir="/media/Drives/DS2/HOME/Media/Pictures/WallPaper/"
 
-# Get a random wallpaper from the directory
-wallpaper_dp2=$(find "$wallpaper_dir" -type f | shuf -n 1)
-wallpaper_dp3=$(find "$wallpaper_dir" -type f | shuf -n 1)
-wallpaper_hmdi1=$(find "$wallpaper_dir" -type f | shuf -n 1)
-# Set the wallpaper using eww. Each monitor has a different wallpaper
-swww img --outputs DP-2 --transition-type none "$wallpaper_dp2"
-swww img --outputs DP-3 --transition-type none "$wallpaper_dp3"
+# Define wallpaper directory
+WALLPAPER_DIR="/media/Drives/DS2/HOME/Media/Pictures/WallPaper/"
+
+# Get random wallpapers for each monitor
+WALLPAPER_DP2=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
+WALLPAPER_DP3=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
+
+swww img --outputs DP-2 --transition-type none "$WALLPAPER_DP2"
+swww img --outputs DP-3 --transition-type none "$WALLPAPER_DP3"
+
+# Generate the hyprpaper config file
+cat <<EOL >~/.config/hypr/hyprpaper.conf
+# Hyprpaper Config
+
+wallpaper = DP-2, $WALLPAPER_DP2
+wallpaper = DP-3, $WALLPAPER_DP3
+
+preload = $WALLPAPER_DP2
+preload = $WALLPAPER_DP3
+EOL
