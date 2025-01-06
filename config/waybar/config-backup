@@ -14,7 +14,8 @@
     // Modules Left
     "modules-left": [
       "custom/powermenu",
-           "hyprland/workspaces",
+      "group/quicklinks",
+      "hyprland/workspaces",
       //"hyprland/window",
       "wlr/taskbar",
       ],
@@ -26,7 +27,6 @@
 
     //Modules Right
     "modules-right": [
-      "group/quicklinks",
       "group/systemtray",
       "group/systeminfo",
     ],

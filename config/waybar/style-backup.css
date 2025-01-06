@@ -1,21 +1,3 @@
-/*base background color*/
-@define-color bg_main rgba(25, 25, 25, 0.65);
-@define-color bg_main_tooltip rgba(0, 0, 0, 0.7);
-
-
-/*base background color of selections */
-@define-color bg_hover rgba(200, 200, 200, 0.3);
-/*base background color of active elements */
-@define-color bg_active rgba(100, 100, 100, 0.5);
-
-/*base border color*/
-@define-color border_main rgba(255, 255, 255, 0.2);
-
-/*text color for entries, views and content in general */
-@define-color content_main white;
-/*text color for entries that are unselected */
-@define-color content_inactive rgba(255, 255, 255, 0.25);
-
 * {
   border: none;
   border-radius: 0px;
@@ -41,53 +23,47 @@
   color: #fa5aa4;
 }
 
-
-taskbar button {
+/*testing
+#taskbar button {
     box-shadow: none;
-	  text-shadow: none;
+	text-shadow: none;
     padding: 0px;
     border-radius: 2px;
     margin-top: 2px;
     margin-bottom: 2px;
-    /*margin-left: 11px;
-    padding-left: 11px;
-    padding-right: 11px;
-    margin-right: 11px;*/
-    color: #000000;
-    border-radius: 4px;
-    padding: 2px 8px;
-    background-color: rgba(30,36,43,0.8); /*#303643; */
-    margin: 4px 4px;
-    border-radius: 8px;
+    margin-left: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-right: 0px;
     color: #eeeeef;
+    animation: tb_normal 20s ease-in-out 1;
 }
 
 #taskbar button.active {
     background: #1e222a;
     color: #eeeeef;
-    /*margin-left: 2px;
+    margin-left: 2px;
     padding-left: 11px;
     padding-right: 11px;
-    margin-right: 2px;*/
+    margin-right: 2px;
     animation: tb_active 20s ease-in-out 1;
-    padding: 2px 8px;
-    background-color: rgba(30,36,43,0.8); /*#303643; */
-    margin: 4px 4px;
-    border-radius: 8px;
-    color: #eeeeef;
-
+    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #taskbar button:hover {
     background: #fa5aa4;
     color: #eeeeef;
     animation: tb_hover 20s ease-in-out 1;
-    padding: 2px 8px;
-    margin: 4px 4px;
-    border-radius: 8px;
-    color: #eeeeef;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
+#tray menu * {
+    min-height: 2px
+}
+
+#tray menu separator {
+    min-height: 5px 
+}*/
 /* Tooltips */
 tooltip {
   background-color: rgba(30,36,43,0.8); /*#303643; */
@@ -109,8 +85,7 @@ tooltip label {
 #window,
 #disk,
 #keyboard-state,
-/*#taskbar,
-#custom-steam,
+/*#custom-steam,
 #custom-discord,
 #custom-thunderbird,*/
 #tray{
@@ -120,24 +95,6 @@ tooltip label {
   border-radius: 8px;
   color: #eeeeef;
 }
-
-/*
-#tray > .passive {
-	border-bottom: none;
-}
-#tray > .active {
-	border-bottom: 3px solid white;
-}
-
-#tray > .needs-attention {
-	border-bottom: 3px solid @warning_color;
-}
-#tray > widget {
-	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-#tray > widget:hover {
-	background: @bg_hover;
-}*/
 
 /*Specific Styling*/
 #window {
