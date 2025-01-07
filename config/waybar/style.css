@@ -16,6 +16,11 @@
 /*text color for entries that are unselected */
 @define-color content_inactive rgba(255, 255, 255, 0.25);
 
+/*colour for active items */
+@define-color is_selected #fa5aa4;
+
+
+
 * {
   border: none;
   border-radius: 0px;
@@ -32,65 +37,43 @@
   font-family: "Fira Code Nerd Font";
 }
 
+
+/*                               Styling for Workspaces                                  */
 #workspaces button {
   color: #eeeeef;
 }
-/* Fix: active workspace doesn't show up */
-/* #workspaces button.focused { */
+
 #workspaces button.active {
-  color: #fa5aa4;
+  color: @is_selected;
 }
 
+/*                               Styling for Taskbar                            */
 
-taskbar button {
-    box-shadow: none;
-	  text-shadow: none;
-    padding: 0px;
-    border-radius: 2px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    /*margin-left: 11px;
-    padding-left: 11px;
-    padding-right: 11px;
-    margin-right: 11px;*/
-    color: #000000;
-    border-radius: 4px;
-    padding: 2px 8px;
-    background-color: rgba(30,36,43,0.8); /*#303643; */
-    margin: 4px 4px;
-    border-radius: 8px;
-    color: #eeeeef;
+#taskbar {
+  background-color: rgba(30,36,43,0.8); 
+  border-radius: 8px;
+  color: #eeeeef;
+  margin: 4px 4px;
+}
+#taskbar button{
+  color: #000000;
+  border-radius: 4px;
+  border-color: @is_selected;
+  padding: 0px 10px;
+  border-radius: 8px;
+  color: #eeeeef;
 }
 
 #taskbar button.active {
-    background: #1e222a;
-    color: #eeeeef;
-    /*margin-left: 2px;
-    padding-left: 11px;
-    padding-right: 11px;
-    margin-right: 2px;*/
-    animation: tb_active 20s ease-in-out 1;
-    padding: 2px 8px;
-    background-color: rgba(30,36,43,0.8); /*#303643; */
-    margin: 4px 4px;
-    border-radius: 8px;
-    color: #eeeeef;
-
-}
+    background-color: rgba(120,81,169,0.5);}
 
 #taskbar button:hover {
-    background: #fa5aa4;
-    color: #eeeeef;
-    animation: tb_hover 20s ease-in-out 1;
-    padding: 2px 8px;
-    margin: 4px 4px;
-    border-radius: 8px;
-    color: #eeeeef;
+    background: @is_selected;
 }
 
-/* Tooltips */
+/*                     Tooltips                                                */
 tooltip {
-  background-color: rgba(30,36,43,0.8); /*#303643; */
+  background-color: rgba(30,36,43,0.8); 
   border-radius: 4px;
 }
 
@@ -98,7 +81,7 @@ tooltip label {
   color: #eeeeef;
 }
 
-/*Main Styling*/
+/*                     Main Styling                                            */
 #custom-powermenu,
 #cpu,
 #workspaces,
@@ -139,7 +122,7 @@ tooltip label {
 	background: @bg_hover;
 }*/
 
-/*Specific Styling*/
+/*                          Specific Styling                      */
 #window {
   color:  #ffffff; 
 }
@@ -160,7 +143,6 @@ tooltip label {
 }
 
 #temperature {
-  /*color: #98c379;*/
   color: #FF7F7F;
 }
 
@@ -173,6 +155,9 @@ tooltip label {
   padding-right: 4px;
 }
 
+
+
+/*                       Styling for Quick Links                                */
 #custom-steam,
 #custom-thunderbird,
 #custom-discord{
@@ -199,5 +184,15 @@ tooltip label {
   color: #9CA6FF;
   /*background-image: url('/usr/share/icons/Tela/scalable/apps/discord.svg');*/
 }
+
+/*quicklinks{
+    background: #1e222a;
+    color: #eeeeef;
+    animation: tb_active 20s ease-in-out 1;
+    padding: 2px 8px;
+    background-color: rgba(30,36,43,0.8);    margin: 4px 4px;
+    border-radius: 8px;
+    color: #eeeeef;
+}*/
 
 
