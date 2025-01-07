@@ -11,10 +11,10 @@
   "group/systeminfo":{
     "orientation": "horizontal",
     "modules":[
-     // "temperature",
+      "pulseaudio",
+      "temperature",
       "cpu",
       "memory",
-      "pulseaudio",
     ],
     "on-click": "exec plasma-systemmonitor"
   },
@@ -27,17 +27,17 @@
 
   // Custom Defined Modules
   "custom/thunderbird": {
-    "format": "\uf370 ",
+    "format": "\uf370",
     "tooltip-format": "<tt>Thunderbird</tt>",
     "on-click": "exec flatpak run org.mozilla.Thunderbird",
   },
   "custom/steam":{
-    "format": "\uf1b6 ",
+    "format": "\uf1b6",
     "tooltip-format": "<tt>Steam</tt>",
     "on-click": "exec flatpak run com.valvesoftware.Steam",
   },
   "custom/discord":{
-      "format": "\uf1ff ",
+      "format": "\uf1ff",
       "tooltip-format": "<tt>Discord</tt>",
       "on-click": "exec flatpak run com.discordapp.Discord",
   },

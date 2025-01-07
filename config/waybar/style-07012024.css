@@ -92,10 +92,14 @@ tooltip label {
 
 
 
-/*                          Main Styling                                            */
+/*                     Main Styling                                            */
 #custom-powermenu,
+#cpu,
 #workspaces,
+#temperature,
+#memory,
 #clock,
+#pulseaudio,
 #window,
 #disk,
 #keyboard-state,
@@ -121,6 +125,23 @@ tooltip label {
 }
 
 
+#pulseaudio {
+  color: #0fb9b1;
+  padding-right: 14px;
+}
+
+#cpu {
+  color: #61afef;
+}
+
+#temperature {
+  color: #FF7F7F;
+}
+
+#memory {
+  color: #e5c07b;
+}
+
 #workspaces{
   padding-left: 5px;
   padding-right: 4px;
@@ -145,39 +166,8 @@ tooltip label {
   color: #9CA6FF;
   padding: 0px 6px;
 }
-/*Group*/
+
 #quicklinks {
-  background-color: rgba(30,36,43,0.8); /* Same background as individual items */
-  border-radius: 8px; /* Rounded corners for the container */
-  margin: 4px 4px;
-  padding: 0px 8px;
-}
-
-
-
-/*                       Styling for System Info                                    */
-
-#cpu {
-  color: #61afef;
-  padding: 0px 6px;
-}
-
-#temperature {
-  color: #FF7F7F;
-  padding: 0px 6px;
-}
-
-#memory {
-  color: #e5c07b;
-  padding: 0px 6px;
-}
-
-#pulseaudio {
-  color: #0fb9b1;
-  padding: 0px 6px;
-}
-/*Group*/
-#systeminfo {
   background-color: rgba(30,36,43,0.8); /* Same background as individual items */
   border-radius: 8px; /* Rounded corners for the container */
   margin: 4px 4px;
