@@ -1,8 +1,8 @@
 /*base background color*/
-@define-color bg_main rgba(30,36,43,0.8); /* Very Dark Grey but it isn't black */
+@define-color bg_main rgba(30,36,43,1); /* Very Dark Grey but it isn't black */
 
 /*border colour */
-@define-color border_main rgba(200,200,200,0.5); /* Light Grey */
+@define-color border_main rgba(120,120,120,1); /*#808080; Light Grey */
 
 /*colour for active items */
 @define-color is_active rgba(250, 90, 164, 1); /* Pink */
@@ -22,7 +22,7 @@
 }
 
 #waybar {
-  /*background: #1e222a; fallback colour */
+  background: #1e222a; /*fallback colour */
   background-color: rgba(25,25,25,0.5); 
   color: #eeeeef;
   font-size: 16px;
@@ -59,8 +59,8 @@
 }
 
 #taskbar button.active {
-  border-bottom: 2px solid @is_active;
-  border-top: 2px solid @is_active;
+  border-bottom: 1px solid @is_active;
+  border-top: 1px solid @is_active;
   border-radius: 0px;
 }
 
