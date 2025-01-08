@@ -3,9 +3,7 @@
     "layer": "middle",
     "position": "top",
     "margin-bottom": 0,
-    "height": 30,
-    
-
+    "height": 30, 
     // Load Modules
     "include": [
         "$HOME/.config/waybar/modules.json",
@@ -30,6 +28,7 @@
       "group/systemtray",
       "group/systeminfo",
     ],
-
 }
+
+
 

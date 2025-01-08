@@ -1,0 +1,189 @@
+/*base background color*/
+@define-color bg_main rgba(30,36,43,0.8); /* Very Dark Grey but it isn't black */
+
+/*border colour */
+@define-color border_main rgba(200,200,200,0.5); /* Light Grey */
+
+/*colour for active items */
+@define-color is_active rgba(250, 90, 164, 1); /* Pink */
+
+@define-color is_selected rgba(5, 165, 91, 1); /* Lime Green */
+ 
+
+/*############################### Base Styling Settings ###############################*/
+* {
+  border: none;
+  border-radius: 0px;
+  min-height: 0px;
+  margin: 0px 0px;
+  padding: 0px;
+  /* border: 2px solid @border_main; leave this commented but handy when you need to see all child objects */
+
+}
+
+#waybar {
+  /*background: #1e222a; fallback colour */
+  background-color: rgba(25,25,25,0.5); 
+  color: #eeeeef;
+  font-size: 16px;
+  font-family: "Fira Code Nerd Font";
+}
+
+
+
+
+/*############################### Styling for Workspaces ###############################*/
+#workspaces button {
+  color: #eeeeef;
+  padding: 0px 4px;
+}
+
+#workspaces button.active {
+  color: @is_active;
+}
+
+/* Group */
+#workspaces{
+  background-color: @bg_main;
+  border-radius: 8px;
+  margin: 4px 4px;
+  border: 2px solid @border_main;
+}
+
+
+/*############################### Styling for Taskbar ###############################*/
+#taskbar button{
+  padding: 0px 10px;
+  border-radius: 8px;
+  color: #eeeeef;
+}
+
+#taskbar button.active {
+  border-bottom: 2px solid @is_active;
+  border-top: 2px solid @is_active;
+  border-radius: 0px;
+}
+
+#taskbar button:hover {
+  border-bottom: 2px solid @is_selected;
+  border-top: 2px solid @is_selected;
+  border-radius: 0px;
+}
+
+/* Group */
+#taskbar {
+  background-color: @bg_main; 
+  border-radius: 8px;
+  color: #eeeeef;
+  margin: 4px 4px;
+  border: 2px solid @border_main;
+}
+
+
+/*############################### Styling for Tooltips ###############################*/
+tooltip label {
+  color: #eeeeef;
+}
+
+/* Group */
+tooltip {
+  background-color: @bg_main; 
+  border-radius: 4px;
+}
+
+
+/* ############################### Styling for General ###############################*/
+#custom-powermenu,
+#clock,
+#window,
+#disk,
+#keyboard-state,
+#tray{
+  padding: 2px 8px;
+  background-color: @bg_main; /*#303643; */
+  margin: 4px 4px;
+  border-radius: 8px;
+  color: #eeeeef;
+  border: 2px solid @border_main;
+
+}
+
+
+
+
+/*############################### Styling for Specifics ###############################*/
+#window {
+  color:  #ffffff;
+}
+
+#custom-powermenu {
+  color: #e06c75;
+  padding-right: 12px;
+}
+
+
+#workspaces{
+  padding-left: 5px;
+  padding-right: 4px;
+}
+
+
+
+
+/*############################### Styling for Quick Links ###############################*/
+#custom-steam{
+  color: #c7d5e0;
+  padding: 0px 8px;
+
+}
+#custom-thunderbird{
+  color: #76f9ee;
+  padding: 0px 6px;
+
+}
+#custom-discord{
+  color: #9CA6FF;
+  padding: 0px 8px;
+}
+
+/* Group */
+#quicklinks {
+  background-color: @bg_main;
+  border-radius: 8px;
+  margin: 4px 4px;
+  padding: 0px 8px;
+  border: 2px solid @border_main;
+}
+
+
+/*############################### Styling for System Info ###############################*/
+#cpu {
+  color: #61afef;
+  padding: 0px 6px;
+}
+
+#temperature {
+  color: #FF7F7F;
+  padding: 0px 6px;
+}
+
+#memory {
+  color: #e5c07b;
+  padding: 0px 6px;
+}
+
+#pulseaudio {
+  color: #0fb9b1;
+  padding: 0px 8px;
+}
+
+
+/* Group */
+#systeminfo {
+  background-color: @bg_main; 
+  border-radius: 8px; 
+  margin: 4px 4px;
+  padding: 0px 6px;
+  border: 2px solid @border_main;
+
+}
