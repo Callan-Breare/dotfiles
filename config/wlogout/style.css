@@ -1,32 +1,39 @@
+/*base background color*/
+@define-color bg_main rgba(30,36,43,1); /* Very Dark Grey but it isn't black */
+
+/*border colour */
+@define-color border_main rgba(120,120,120,1); /*#808080; Light Grey */
+
+/*colour for active items */
+@define-color is_selected rgba(150, 100, 255, 0.7); /* Pastel Purple */
+
 * {
 	background-image: none;
 	box-shadow: none;
 }
 
 window {
-	background-color: rgba(12, 12, 12, 0.1);
+	background-color: rgba(12, 12, 12, 0.9);
 }
 
 button {
-  border-radius: 0;
-  border-color: black;
-	text-decoration-color: #FFFFFF;
+  border-radius: 8px;
   color: #FFFFFF;
-	background-color: #1E1E1E;
-	border-style: solid;
-	border-width: 1px;
+	background-color: @bg_main;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 25%;
+  border: 2px solid @border_main;
+  font-size: 24px;
 }
 
-button:focus, button:active, button:hover {
-	background-color: #3700B3;
+button:hover {
+  background-color: @is_selected;
 	outline-style: none;
 }
 
 #lock {
-    background-image: image(url("/usr/share/icons/Tela/scalable/apps/lock.svg"), url("/home/cbreare/.local/share/icons/Tela/scalable/apps/lock.svg"));
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/share/wlogout/icons/lock.png"));
 }
 
 #logout {
@@ -47,3 +54,4 @@ button:focus, button:active, button:hover {
 
 #reboot {
     background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}

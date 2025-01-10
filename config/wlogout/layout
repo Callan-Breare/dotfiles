@@ -1,7 +1,7 @@
 {
     "label" : "lock",
     "action" : "/usr/lib/kscreenlocker_greet --immediateLock",
-    "text" : "Lock",
+    "text": "Lock",
     "keybind" : "l"
 }
 {
