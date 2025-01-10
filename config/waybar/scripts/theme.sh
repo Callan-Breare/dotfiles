@@ -1,3 +1,2 @@
 pkill waybar
-
-waybar -c $HOME/.config/waybar/scripts/theme1.json
+##TODO Make script to change theme by indexing through a list of themes
