@@ -17,8 +17,7 @@ Breeze theme pack installed
 - hyprland
 - waybar
 - wayland
-- gtk3
-- qt5
+- gtk3/4
 - dunst
 - swww
 - wlogout
@@ -33,7 +32,8 @@ Breeze theme pack installed
 ![dunst](images/dunst.png)
 4. Desktop
 ![hyprland](images/hyprland.png)
-
+5. wlogout
+![wlogout](images/wlogout.png)
 
 
 # To Do
