@@ -87,8 +87,12 @@ tooltip label {
 
 /* Group */
 tooltip {
-  background-color: @bg_main; 
-  border-radius: 4px;
+  padding: 2px 8px;
+  background-color: @bg_main; /*#303643; */
+  margin: 4px 4px;
+  border-radius: 8px;
+  color: #eeeeef;
+  border: 2px solid @border_main;
 }
 
 
