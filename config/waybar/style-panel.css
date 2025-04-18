@@ -7,7 +7,7 @@
 /*colour for active items */
 @define-color is_active rgba(250, 90, 164, 1); /* Pink */
 
-@define-color is_selected rgba(5, 165, 91, 1); /* Lime Green */
+@define-color is_selected rgba(60, 50, 80, 1); /* rgba(5, 165, 91, 1); Lime Green */
  
 
 /*############################### Base Styling Settings ###############################*/
@@ -42,11 +42,13 @@
   color: @is_active;
 }
 
+
+
 /* Group */
 #workspaces{
   background-color: @bg_main;
   border-radius: 8px;
-  margin: 4px 4px;
+  margin: 4px 0px;
   border: 2px solid @border_main;
 }
 
@@ -64,18 +66,13 @@
   border-radius: 0px;
 }
 
-#taskbar button:hover {
-  border-bottom: 2px solid @is_selected;
-  border-top: 2px solid @is_selected;
-  border-radius: 0px;
-}
 
 /* Group */
 #taskbar {
   background-color: @bg_main; 
   border-radius: 8px;
   color: #eeeeef;
-  margin: 4px 4px;
+  margin: 4px 0px;
   border: 2px solid @border_main;
 }
 
@@ -114,7 +111,6 @@ tooltip {
 
 
 
-
 /*############################### Styling for Specifics ###############################*/
 #window {
   color:  #ffffff;
@@ -131,7 +127,9 @@ tooltip {
   padding-right: 4px;
 }
 
-
+#tray{
+  margin: 4px 0px;
+}
 
 
 /*############################### Styling for Quick Links ###############################*/
@@ -158,6 +156,8 @@ tooltip {
   padding: 0px 8px;
   border: 2px solid @border_main;
 }
+
+
 
 
 /*############################### Styling for System Info ###############################*/
@@ -191,3 +191,18 @@ tooltip {
   border: 2px solid @border_main;
 
 }
+
+/*############################### Styling for Hover ###############################*/
+#taskbar button:hover, 
+#clock:hover,
+#custom-powermenu:hover,
+#quicklinks *:hover,
+#workspaces *:hover,
+#systeminfo *:hover,
+#tray *:hover {
+  /*border-bottom: 2px solid @is_selected ;
+  border-top: 2px solid @is_selected ; */
+  border-radius: 8px ;
+  background-color: @is_selected;
+}
+

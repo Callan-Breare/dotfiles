@@ -16,7 +16,7 @@
       "cpu",
       "memory",
     ],
-    "on-click": "exec plasma-systemmonitor"
+    
   },
   "group/systemtray":{
     "orientation": "horizontal",
@@ -63,14 +63,17 @@
     "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 80,
     "format-icons": ["", "", ""],
+    "on-click": "exec plasma-systemmonitor",
   },
   "memory": {
     "format": "\ue266 {}%",
-    "tooltip": "true"
+    "tooltip": "true",
+    "on-click": "exec plasma-systemmonitor",
   },
   "cpu": {
     "format": "\uf2db {usage}%",
-    "tooltip": "true"
+    "tooltip": "true",
+    "on-click": "exec plasma-systemmonitor",
   },
   "disk#home":{
     "format": "\uf015 {percentage_used}%",
