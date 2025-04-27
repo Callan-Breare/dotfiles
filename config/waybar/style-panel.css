@@ -99,7 +99,7 @@ tooltip {
 #window,
 #disk,
 #keyboard-state,
-#tray{
+#tray {
   padding: 2px 8px;
   background-color: @bg_main; /*#303643; */
   margin: 4px 4px;
@@ -177,7 +177,12 @@ tooltip {
 }
 
 #pulseaudio {
-  color: #0fb9b1;
+  color: #61afef;
+  padding: 0px 8px;
+}
+
+#custom-brightness {
+  color: orange;
   padding: 0px 8px;
 }
 

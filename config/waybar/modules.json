@@ -13,8 +13,9 @@
     "modules":[
       "pulseaudio",
       "temperature",
-      "cpu",
-      "memory",
+      //"cpu",
+      //"memory",
+      "custom/brightness",
     ],
     
   },
@@ -47,19 +48,10 @@
     "icon-size": 20,
     "spacing": 4,
   },
-  "keyboard-state": {
-    "numlock": true,
-    "capslock": true,
-    "format": "{name} {icon}",
-    "format-icons":{
-      "locked": "L",
-      "unlocked": "U",
-    },
-  },
 
   // System Information
   "temperature": {
-    "format": "{icon} {temperatureC}°C",
+    "format": " {temperatureC}°C",
     "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 80,
     "format-icons": ["", "", ""],
@@ -104,6 +96,15 @@
     "tooltip-format": "<tt><big>{calendar}</big></tt>",
   },
 
+  "custom/brightness": {
+    "format": "{}",
+    "exec": "$HOME/Scripts/System/Brightness/current_brightness.sh",
+    "interval": 1,
+    "return-type": "json",
+    "on-scroll-up": "exec $HOME/Scripts/System/Brightness/brightness_up.sh",
+    "on-scroll-down": "exec $HOME/Scripts/System/Brightness/brightness_down.sh",
+  },
+
   // Hyprland Modules
   "hyprland/window": {
       "max-length": 50,
@@ -118,7 +119,7 @@
   },
   // taskbar
   "wlr/taskbar": {
-    "format": "{icon} {title:.17}",
+    "format": "{icon} {title:.15}",
     "icon-size": 20,
     "spacing": 3,
     "on-click-middle": "close",
