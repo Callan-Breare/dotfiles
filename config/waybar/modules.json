@@ -3,6 +3,7 @@
   "group/quicklinks":{
     "orientation": "horizontal",
     "modules":[
+       //"custom/startmenu",
         "custom/thunderbird",
         "custom/discord",
         "custom/steam",
@@ -26,7 +27,12 @@
     ],
   },
 
-  // Custom Defined Modules
+  // Group Quicklinks
+  "custom/startmenu": {
+    "format": "\u2699",
+    "tooltip-format": "<tt>Wofi Start Menu</tt>",
+    "on-click": "wofi --conf=$HOME/.config/wofi/config",
+  },
   "custom/thunderbird": {
     "format": "\uf370",
     "tooltip-format": "<tt>Thunderbird</tt>",
@@ -45,13 +51,13 @@
     
   // System tray
   "tray": {
-    "icon-size": 20,
+    "icon-size": 19,
     "spacing": 4,
   },
 
   // System Information
   "temperature": {
-    "format": " {temperatureC}°C",
+    "format": "{temperatureC}°C",
     "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 80,
     "format-icons": ["", "", ""],
@@ -103,6 +109,8 @@
     "return-type": "json",
     "on-scroll-up": "exec $HOME/Scripts/System/Brightness/brightness_up.sh",
     "on-scroll-down": "exec $HOME/Scripts/System/Brightness/brightness_down.sh",
+    "on-click": "exec ddcutil setvcp 10 100",
+    "on-click-right": "exec ddcutil setvcp 10 0",
   },
 
   // Hyprland Modules
@@ -121,7 +129,6 @@
   "wlr/taskbar": {
     "format": "{icon} {title:.15}",
     "icon-size": 20,
-    "spacing": 3,
     "on-click-middle": "close",
     "tooltip-format": "{title}",
     "ignore-list": [],

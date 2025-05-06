@@ -133,19 +133,24 @@ tooltip {
 
 
 /*############################### Styling for Quick Links ###############################*/
+#custom-startmenu{
+  color: #c7d5e0;
+   padding: 0px 6px;
+}
+
 #custom-steam{
   color: #c7d5e0;
-  padding: 0px 8px;
-
+  padding-left: 6px;
+  padding-right: 4px;
 }
 #custom-thunderbird{
   color: #76f9ee;
-  padding: 0px 6px;
-
+  padding-right: 8px;
 }
 #custom-discord{
   color: #9CA6FF;
-  padding: 0px 8px;
+  padding-right: 8px;
+  padding-left: 6px
 }
 
 /* Group */
