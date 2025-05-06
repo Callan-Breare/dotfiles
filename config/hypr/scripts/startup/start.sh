@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-#Authentication Agent to Interact with KDE applications
-exec /usr/lib/polkit-kde-authentication-agent-1 &
-
+#Authentication Agent
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#exec /usr/bin/kdeconnectd &
 #initialise idle lockout agent
-exec hypridle &
+#exec hypridle &
 
 # initialise wallpaper daemon
 swww-daemon &
@@ -21,3 +21,5 @@ $HOME/.config/hypr/scripts/waybar/load-waybar.sh
 
 # notification daemon
 dunst &
+# bluetooth manager
+exec blueman-applet &
