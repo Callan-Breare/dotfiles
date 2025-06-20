@@ -2,6 +2,8 @@
 
 **Designed to be used on Arch linux**
 
+You're installing this at your own risk, take backups of your config files before running any script from here
+
 ## Assumptions
 Tela icon pack installed
 Breeze theme pack installed
