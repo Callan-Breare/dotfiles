@@ -11,7 +11,7 @@
 
     // Modules Left
     "modules-left": [
-      "custom/powermenu",
+      "group/startmenu",
       "hyprland/workspaces",
       //"hyprland/window",
       "group/quicklinks",

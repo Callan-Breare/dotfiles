@@ -51,6 +51,32 @@
   margin: 4px 0px;
   border: 2px solid @border_main;
 }
+/*############################### Styling for Start Menu ###############################*/
+
+#custom-launcher
+{
+  padding-left: 4px;
+  padding-right: 14px; 
+  border-radius: 8px;
+  color: #61afef;
+}
+
+#custom-powermenu
+{
+  padding-left: 8px;
+  padding-right: 7px;
+  border-radius: 8px;
+  color: #e06c75;
+}
+
+/* Group */
+#startmenu {
+  background-color: @bg_main; 
+  border-radius: 8px;
+  color: #eeeeef;
+  margin: 4px 4px;
+  border: 2px solid @border_main;
+}
 
 
 /*############################### Styling for Taskbar ###############################*/
@@ -94,7 +120,8 @@ tooltip {
 
 
 /* ############################### Styling for General ###############################*/
-#custom-powermenu,
+/*#custom-powermenu,
+#custom-launcher,*/
 #clock,
 #window,
 #disk,
@@ -116,10 +143,7 @@ tooltip {
   color:  #ffffff;
 }
 
-#custom-powermenu {
-  color: #e06c75;
-  padding-right: 12px;
-}
+
 
 
 #workspaces{
@@ -192,6 +216,7 @@ tooltip {
 }
 
 
+
 /* Group */
 #systeminfo {
   background-color: @bg_main; 
@@ -206,6 +231,7 @@ tooltip {
 #taskbar button:hover, 
 #clock:hover,
 #custom-powermenu:hover,
+#custom-launcher:hover,
 #quicklinks *:hover,
 #workspaces *:hover,
 #systeminfo *:hover,

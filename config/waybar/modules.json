@@ -16,6 +16,8 @@
       "temperature",
       //"cpu",
       //"memory",
+      //"disk#home",
+      //"disk#game",
       "custom/brightness",
     ],
     
@@ -26,13 +28,16 @@
       "tray",
     ],
   },
+  "group/startmenu":{
+    "orientation": "horizontal",
+    "modules": [
+      "custom/powermenu",
+      "custom/launcher",
+    ],
+  },
 
   // Group Quicklinks
-  "custom/startmenu": {
-    "format": "\u2699",
-    "tooltip-format": "<tt>Wofi Start Menu</tt>",
-    "on-click": "wofi --conf=$HOME/.config/wofi/config",
-  },
+
   "custom/thunderbird": {
     "format": "\uf370",
     "tooltip-format": "<tt>Thunderbird</tt>",
@@ -58,7 +63,8 @@
   // System Information
   "temperature": {
     "format": "{temperatureC}°C",
-    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "interval": 3,
+    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
     "critical-threshold": 80,
     "format-icons": ["", "", ""],
     "on-click": "exec plasma-systemmonitor",
@@ -110,7 +116,7 @@
     "on-scroll-up": "exec $HOME/Scripts/System/Brightness/brightness_up.sh",
     "on-scroll-down": "exec $HOME/Scripts/System/Brightness/brightness_down.sh",
     "on-click": "exec ddcutil setvcp 10 100",
-    "on-click-right": "exec ddcutil setvcp 10 0",
+    "on-click-right": "exec ddcutil setvcp 10 80",
   },
 
   // Hyprland Modules
@@ -119,12 +125,20 @@
       "separate-outputs": true
   },
 
-  //////////////////////
+  // Start Menu
   "custom/powermenu": {
     "format": "",
-    "tooltip": false,
+    "tooltip-format": "<tt>Power Menu</tt>",
     "on-click": "exec wlogout -p layer-shell",
   },
+
+   "custom/launcher": {
+    "format": "\uf015", // "\u2699",
+    "tooltip-format": "<tt>Wofi Start Menu</tt>",
+    "on-click": "wofi --conf=$HOME/.config/wofi/config",
+  }, 
+
+
   // taskbar
   "wlr/taskbar": {
     "format": "{icon} {title:.15}",
