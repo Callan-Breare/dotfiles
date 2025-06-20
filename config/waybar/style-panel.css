@@ -8,6 +8,8 @@
 @define-color is_active rgba(250, 90, 164, 1); /* Pink */
 
 @define-color is_selected rgba(60, 50, 80, 1); /* rgba(5, 165, 91, 1); Lime Green */
+
+@define-color grey_light #c7d5e0;
  
 
 /*############################### Base Styling Settings ###############################*/
@@ -123,9 +125,6 @@ tooltip {
 /*#custom-powermenu,
 #custom-launcher,*/
 #clock,
-#window,
-#disk,
-#keyboard-state,
 #tray {
   padding: 2px 8px;
   background-color: @bg_main; /*#303643; */
@@ -143,9 +142,6 @@ tooltip {
   color:  #ffffff;
 }
 
-
-
-
 #workspaces{
   padding-left: 5px;
   padding-right: 4px;
@@ -157,13 +153,8 @@ tooltip {
 
 
 /*############################### Styling for Quick Links ###############################*/
-#custom-startmenu{
-  color: #c7d5e0;
-   padding: 0px 6px;
-}
-
 #custom-steam{
-  color: #c7d5e0;
+  color: @grey_light;
   padding-left: 6px;
   padding-right: 4px;
 }
@@ -215,6 +206,21 @@ tooltip {
   padding: 0px 8px;
 }
 
+#disk.home {
+  padding: 0px 8px;
+  border-radius: 8px;
+  border: 0px;
+  color: @grey_light;
+  margin: 0px;
+}
+
+#disk.game {
+  padding: 0px 8px;
+  border-radius: 8px;
+  border: 0px;
+  color: @grey_light;
+  margin: 0px;
+}
 
 
 /* Group */

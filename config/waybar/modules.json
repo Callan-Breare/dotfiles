@@ -12,12 +12,12 @@
   "group/systeminfo":{
     "orientation": "horizontal",
     "modules":[
+      "disk#home",
+      "disk#game",
       "pulseaudio",
       "temperature",
       //"cpu",
       //"memory",
-      //"disk#home",
-      //"disk#game",
       "custom/brightness",
     ],
     
