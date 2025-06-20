@@ -6,11 +6,10 @@
 
 /*colour for active items */
 @define-color is_active rgba(250, 90, 164, 1); /* Pink */
-
 @define-color is_selected rgba(60, 50, 80, 1); /* rgba(5, 165, 91, 1); Lime Green */
 
 @define-color grey_light #c7d5e0;
- 
+
 
 /*############################### Base Styling Settings ###############################*/
 * {
@@ -44,13 +43,13 @@
   color: @is_active;
 }
 
-
-
 /* Group */
 #workspaces{
   background-color: @bg_main;
   border-radius: 8px;
-  margin: 4px 0px;
+  padding-left: 5px;
+  padding-right: 4px;
+  margin: 4px 4px;
   border: 2px solid @border_main;
 }
 /*############################### Styling for Start Menu ###############################*/
@@ -100,7 +99,7 @@
   background-color: @bg_main; 
   border-radius: 8px;
   color: #eeeeef;
-  margin: 4px 0px;
+  margin: 4px 4px;
   border: 2px solid @border_main;
 }
 
@@ -112,9 +111,7 @@ tooltip label {
 
 /* Group */
 tooltip {
-  padding: 2px 8px;
   background-color: @bg_main; /*#303643; */
-  margin: 4px 4px;
   border-radius: 8px;
   color: #eeeeef;
   border: 2px solid @border_main;
@@ -138,18 +135,6 @@ tooltip {
 
 
 /*############################### Styling for Specifics ###############################*/
-#window {
-  color:  #ffffff;
-}
-
-#workspaces{
-  padding-left: 5px;
-  padding-right: 4px;
-}
-
-#tray{
-  margin: 4px 0px;
-}
 
 
 /*############################### Styling for Quick Links ###############################*/
@@ -208,18 +193,12 @@ tooltip {
 
 #disk.home {
   padding: 0px 8px;
-  border-radius: 8px;
-  border: 0px;
   color: @grey_light;
-  margin: 0px;
 }
 
 #disk.game {
   padding: 0px 8px;
-  border-radius: 8px;
-  border: 0px;
   color: @grey_light;
-  margin: 0px;
 }
 
 
@@ -228,16 +207,13 @@ tooltip {
   background-color: @bg_main; 
   border-radius: 8px; 
   margin: 4px 4px;
-  padding: 0px 6px;
   border: 2px solid @border_main;
-
 }
 
 /*############################### Styling for Hover ###############################*/
 #taskbar button:hover, 
 #clock:hover,
-#custom-powermenu:hover,
-#custom-launcher:hover,
+#startmenu *:hover,
 #quicklinks *:hover,
 #workspaces *:hover,
 #systeminfo *:hover,
