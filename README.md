@@ -13,7 +13,7 @@ Breeze theme pack installed
 1. run `sudo pacman -S git stow --needed`
 2. clone the repository
 3. cd into dotfiles
-4. stow . 
+4. run `./install.sh` 
 
 ## Dependencies
 - git
