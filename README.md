@@ -39,9 +39,3 @@ Breeze theme pack installed
 5. wlogout
 ![wlogout](images/wlogout.png)
 
-
-# To Do
-1. Fully implement hyprlock
-2. Remove remaining KDE dependencies (looking at you kscreenlocker)
-3. Write a proper install script 
-4. Review comments in existing script/configs
