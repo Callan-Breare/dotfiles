@@ -1,12 +1,17 @@
 # dotfiles
 
-**Designed to be used on Arch linux**
+**Designed to be used on Arch Linux with the Hyprland desktop**
 
-You're installing this at your own risk, take backups of your config files before running any script from here
+You're installing this at your own risk, take backups of your configs files before running any script from here and do your due diligence!
 
 ## Assumptions
-Tela icon pack installed
-Breeze theme pack installed
+Following theme packs are installed:
+ - Tela icon 
+ - Breeze theme
+
+Following packages are installed:
+ - git
+ - hyprland
 
 
 ## Usage
