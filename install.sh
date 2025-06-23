@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Installing packages"
+
+sudo pacman -S stow kitty neovim waybar wlogout wofi dunst swww --needed
+
 echo "Backing up existing config files"
 
 #rename .config directories to old to retain original configuration
