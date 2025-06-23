@@ -10,12 +10,14 @@ Breeze theme pack installed
 
 
 ## Usage
-
-1. clone the repository
-2. cd into dotfiles
-3. run `./install.sh`
+1. run `sudo pacman -S git stow --needed`
+2. clone the repository
+3. cd into dotfiles
+4. stow . 
 
 ## Dependencies
+- git
+- stow
 - hyprland
 - waybar
 - wayland
