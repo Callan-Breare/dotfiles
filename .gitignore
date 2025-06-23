@@ -1,4 +1,4 @@
-config/nvim/lazy-lock.json
-config/nvim/lazyvim.json
-.stow-ignore
+.config/nvim/lazy-lock.json
+.config/nvim/lazyvim.json
+./.stow-ignore
 
