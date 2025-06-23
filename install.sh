@@ -2,7 +2,7 @@
 
 echo "Installing packages"
 
-sudo pacman -S stow kitty neovim waybar wlogout wofi dunst swww --needed
+sudo pacman -S stow kitty neovim waybar wofi dunst swww --needed
 
 echo "Backing up existing config files"
 
