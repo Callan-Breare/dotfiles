@@ -1,6 +1,5 @@
 install.sh
-^images(/|$)
-
+.*images
 #RCS
 .+,v
 
