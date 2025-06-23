@@ -12,6 +12,7 @@ Following theme packs are installed:
 Following packages are installed:
  - git
  - hyprland
+ - wlogout (AUR/git)
 
 
 ## Usage
