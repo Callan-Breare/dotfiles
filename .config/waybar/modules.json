@@ -89,6 +89,11 @@
     "path": "/media/Drives/Games/",
     "tooltip": "true",
   },
+  "disk#backup":{
+    "format": "\uec17 {percentage_used}%",
+    "path": "/media/Drives/Backup/",
+    "tooltip": "true",
+  },
 
   "pulseaudio": {
     "format": "{volume}% {icon}",
@@ -135,7 +140,8 @@
    "custom/launcher": {
     "format": "\uf015", // "\u2699",
     "tooltip-format": "<tt>Wofi Start Menu</tt>",
-    "on-click": "wofi --conf=$HOME/.config/wofi/config",
+    "on-click": "hyprctl dispatch exec '[float;move 2 84]wofi --conf=$HOME/.config/wofi/start_config --style=$HOME/.config/wofi/start_config.css'",
+    "on-click-right": "exec pkill wofi"
   }, 
 
 
