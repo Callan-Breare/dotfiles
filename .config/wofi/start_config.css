@@ -38,7 +38,7 @@ window {
 #entry {
   color: rgba(255,255,255,1);
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #text:selected,
