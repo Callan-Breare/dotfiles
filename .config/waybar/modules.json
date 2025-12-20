@@ -105,7 +105,7 @@
     },
     "scroll-step": 2,
     "on-click": "exec $HOME/Scripts/System/Audio/ChangeAudioOutput.sh NAVI",
-    "on-click-right": "exec $HOME/Scripts/System/Audio/ChangeAudioOutput.sh FAMILY",
+    "on-click-right": "exec $HOME/Scripts/System/Audio/ChangeAudioOutput.sh Ryzen",
   },
   "clock": {
     "format": "{:%d %B %H:%M}",
@@ -120,8 +120,8 @@
     "return-type": "json",
     "on-scroll-up": "exec $HOME/Scripts/System/Brightness/brightness_up.sh",
     "on-scroll-down": "exec $HOME/Scripts/System/Brightness/brightness_down.sh",
-    "on-click": "exec ddcutil setvcp 10 100",
-    "on-click-right": "exec ddcutil setvcp 10 80",
+    "on-click": "exec $HOME/Scripts/System/Brightness/brightness_100.sh",
+    "on-click-right": "exec $HOME/Scripts/System/Brightness/brightness_70.sh",
   },
 
   // Hyprland Modules
