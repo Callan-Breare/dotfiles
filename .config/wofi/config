@@ -1,6 +1,6 @@
 show=drun
 width=20%
-height=7%
+height=14%
 columns=1
 prompt=Search...
 normal_window=true
