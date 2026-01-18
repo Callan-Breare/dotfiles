@@ -2,7 +2,7 @@
 
 echo "Installing packages"
 
-sudo pacman -S stow kitty neovim waybar wofi dunst swww --needed
+sudo pacman -Syu stow kitty neovim waybar wofi dunst swww ttf-firacode-nerd --needed
 
 echo "Backing up existing config files"
 
