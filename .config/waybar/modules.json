@@ -58,6 +58,7 @@
   "tray": {
     "icon-size": 19,
     "spacing": 4,
+    "show-passive-itens": true
   },
 
   // System Information
