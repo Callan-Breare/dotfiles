@@ -23,3 +23,5 @@ $HOME/.config/hypr/scripts/waybar/load-waybar.sh
 dunst &
 # bluetooth manager
 exec blueman-applet &
+#usb device manager
+udiskie --tray --no-automount &
