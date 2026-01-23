@@ -97,6 +97,7 @@
   },
 
   "pulseaudio": {
+    "interval": 2,
     "format": "{volume}% {icon}",
     "format-bluetooth": "{volume}% {icon}",
     "format-muted": "{volume}% ",
@@ -105,7 +106,7 @@
         "default": ["", ""]
     },
     "scroll-step": 2,
-    "on-click": "exec $HOME/Scripts/System/Audio/ChangeAudioOutput.sh NAVI",
+    "on-click": "exec $HOME/Scripts/System/Audio/ChangeAudioOutput.sh Navi",
     "on-click-right": "exec $HOME/Scripts/System/Audio/ChangeAudioOutput.sh Ryzen",
   },
   "clock": {
