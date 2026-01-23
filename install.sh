@@ -2,7 +2,7 @@
 
 echo "Installing packages"
 
-sudo pacman -Syu stow kitty neovim waybar wofi dunst swww ttf-firacode-nerd --needed
+yay -Syu stow kitty zsh python neovim waybar hyprland dunst uwsm thunar wofi xdg-desktop-portal-hyprland qt5-wayland qt6-wayland grim slurp vi vim udiskie bluez-utils gparted btop bc gammastep ttf-firacode-nerd wlogout swww --needed
 
 echo "Backing up existing config files"
 
