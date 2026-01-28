@@ -1,0 +1,44 @@
+/* Waybar style */
+@define-color bg_main rgba(30,36,43,1);
+@define-color border_main rgba(120,120,120,1);
+@define-color is_active rgba(250, 90, 164, 1);
+@define-color is_selected rgba(60, 50, 80, 1);
+@define-color text_color #eeeeef;
+
+/* Main window*/
+window {
+    background-color: rgba(25, 25, 25, 0.8);
+    /*border: 2px solid @border_main; */
+    border-radius: 16px; 
+    /*box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4); */
+    margin: 4px;
+}
+
+#box {
+    padding: 8px;
+    border-radius: 16px;
+    background: transparent; /* @bg_main; */
+    border: 2px solid @border_main;
+}
+
+/* Button styling - invisible by default, visible on hover */
+button {
+    background: transparent; /* Invisible by default */
+    color: @text_color;
+    border-radius: 8px;
+    margin-left: 4px;  /* Creates 8px between buttons */
+    margin-right: 4px; /* (4px + 4px = 8px) */
+    padding: 4px;
+    border: 2px solid transparent; /* Invisible border */
+    font-family: "Fira Code Nerd Font";
+    /* Adjust these based on your -i flag value */
+    min-width: 48px;
+    min-height: 48px;
+}
+
+/* Hover effect - button becomes visible */
+button:hover {
+    background-color: @is_selected;
+    border: 2px solid @border_main;
+}
+
