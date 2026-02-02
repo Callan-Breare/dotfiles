@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 #Authentication Agent
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+exec /usr/lib/polkit-kde-authentication-agent-1 &
 #exec /usr/bin/kdeconnectd &
 #initialise idle lockout agent
 #exec hypridle &
