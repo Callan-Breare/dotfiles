@@ -12,7 +12,7 @@ echo "Installing packages"
 yay -Syu stow kitty zsh python neovim \
   waybar hyprland dunst uwsm thunar \
   wofi xdg-desktop-portal-hyprland \
-  qt5-wayland qt6-wayland grim slurp \
+  grim slurp \
   udiskie bluez-utils gparted btop bc \
   gammastep ttf-firacode-nerd wlogout \
   swww wl-clip-persist wl-clipboard cliphlist \
