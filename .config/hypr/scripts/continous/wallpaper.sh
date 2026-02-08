@@ -1,18 +1,20 @@
 #!/bin/bash
 
-# Define wallpaper directory
-WALLPAPER_DIR="/media/Drives/DS2/HOME/Media/Pictures/WallPaper/"
+WALLPAPER_DIR="$HOME/Pictures/WallPaper/"
+mkdir -p "$WALLPAPER_DIR"
 
-# Get random wallpapers for each monitor
-WALLPAPER_DP2=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
+BING_JSON=$(curl -s "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US")
+IMG_URL="https://www.bing.com$(echo "$BING_JSON" | jq -r '.images[0].url')"
 
-swww img --outputs DP-2 --transition-type none "$WALLPAPER_DP2"
+# Extract image description and make pretty for filename
+IMG_DESC=$(echo "$BING_JSON" | jq -r '.images[0].copyright' | sed 's/[^a-zA-Z0-9]/_/g')
+EXT="${IMG_URL##*.}"
+EXT="${EXT%%\?*}"
 
-# Generate the hyprpaper config file
-cat <<EOL >~/.config/hypr/hyprpaper.conf
-# Hyprpaper Config
+IMG_FILE="$WALLPAPER_DIR/${IMG_DESC}.${EXT}"
 
-wallpaper = DP-2, $WALLPAPER_DP2
+if [ ! -f "$IMG_FILE" ]; then
+  curl -s -o "$IMG_FILE" "$IMG_URL"
+fi
 
-preload = $WALLPAPER_DP2
-EOL
+swww img --outputs DP-2 --transition-type none "$IMG_FILE"
