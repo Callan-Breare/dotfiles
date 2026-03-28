@@ -14,7 +14,7 @@
       "group/startmenu",
       "hyprland/workspaces",
       //"hyprland/window",
-      "group/quicklinks",
+      //"group/quicklinks",
       "wlr/taskbar",
       ],
 

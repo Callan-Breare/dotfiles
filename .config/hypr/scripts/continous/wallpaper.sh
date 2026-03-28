@@ -17,4 +17,4 @@ if [ ! -f "$IMG_FILE" ]; then
   curl -s -o "$IMG_FILE" "$IMG_URL"
 fi
 
-swww img --outputs DP-2 --transition-type none "$IMG_FILE"
+awww img --outputs DP-2 --transition-type none "$IMG_FILE"

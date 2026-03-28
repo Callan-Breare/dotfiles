@@ -8,7 +8,7 @@ exec /usr/lib/polkit-kde-authentication-agent-1 &
 #exec hypridle &
 
 # initialise wallpaper daemon
-swww-daemon &
+awww-daemon &
 
 # setting wallpaper
 bash $HOME/.config/hypr/scripts/continous/wallpaper.sh

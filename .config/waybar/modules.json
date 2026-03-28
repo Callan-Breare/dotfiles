@@ -1,14 +1,14 @@
 {    
   // Custom Defined Groups
-  "group/quicklinks":{
-    "orientation": "horizontal",
-    "modules":[
+  //"group/quicklinks":{
+  //  "orientation": "horizontal",
+  //   "modules":[
        //"custom/startmenu",
-        "custom/thunderbird",
-        "custom/discord",
-        "custom/steam",
-      ],
-  },
+        //"custom/thunderbird",
+        //"custom/discord",
+        //"custom/steam",
+  //     ],
+  // },
   "group/systeminfo":{
     "orientation": "horizontal",
     "modules":[
