@@ -201,6 +201,11 @@ tooltip {
   color: @grey_light;
 }
 
+#battery {
+  padding: 0px 6px;
+  margin-right: 6px;
+  color: lime;
+}
 
 /* Group */
 #systeminfo {

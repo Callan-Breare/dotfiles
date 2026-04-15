@@ -115,3 +115,6 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export LD_LIBRARY_PATH=/home/cbreare/.yay/manual_build/openscap/build/src/
 eval "$(zoxide init zsh)"
+
+# Created by `pipx` on 2026-01-24 15:36:21
+export PATH="$PATH:/home/cbreare/.local/bin"

@@ -19,6 +19,7 @@
       //"cpu",
       //"memory",
       "custom/brightness",
+      "battery",
     ],
     
   },
@@ -95,6 +96,10 @@
     "path": "/media/Drives/Backup/",
     "tooltip": "true",
   },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""],
+  },
 
   "pulseaudio": {
     "interval": 2,
@@ -122,8 +127,8 @@
     "return-type": "json",
     "on-scroll-up": "exec $HOME/Scripts/System/Brightness/brightness_up.sh",
     "on-scroll-down": "exec $HOME/Scripts/System/Brightness/brightness_down.sh",
-    "on-click": "exec $HOME/Scripts/System/Brightness/brightness_100.sh",
-    "on-click-right": "exec $HOME/Scripts/System/Brightness/brightness_70.sh",
+    "on-click": "brightnessctl set 100%",
+    "on-click-right": "brightnessctl set 70%",
   },
 
   // Hyprland Modules

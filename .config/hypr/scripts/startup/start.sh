@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 #Authentication Agent
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+exec /usr/lib/polkit-kde-authentication-agent-1 &
 #exec /usr/bin/kdeconnectd &
 #initialise idle lockout agent
 #exec hypridle &
 
 # initialise wallpaper daemon
-swww-daemon &
+awww-daemon &
 
 # setting wallpaper
 bash $HOME/.config/hypr/scripts/continous/wallpaper.sh
@@ -25,3 +25,5 @@ dunst &
 exec blueman-applet &
 #usb device manager
 udiskie --tray --no-automount &
+
+nwg-dock-hyprland -hd 0 -nolauncher -p bottom -i 80 -s style.css -d 1

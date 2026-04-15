@@ -1,0 +1,16 @@
+show=drun
+width=360
+height=500
+columns=1
+prompt=Search...
+normal_window=true
+location=4
+gtk-dark=true
+allow_images=true
+image_size=20
+insensitive=true
+allow_markup=true
+no_actions=true
+orientation=vertical
+halign=start
+content_halign=start
