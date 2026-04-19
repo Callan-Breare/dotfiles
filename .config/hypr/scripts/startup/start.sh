@@ -27,4 +27,4 @@ exec blueman-applet &
 #usb device manager
 udiskie --tray --no-automount &
 
-nwg-dock-hyprland -hd 0 -nolauncher -p bottom -i 80 -s style.css -d 1
+# nwg-dock-hyprland -hd 0 -nolauncher -p bottom -i 80 -s style.css -d 1
