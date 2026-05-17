@@ -1,1 +1,6 @@
-hl.monitor("DP-2", "3440x1440@165", "auto", 1)
+hl.monitor({
+  output = "DP-2",
+  mode = "3440x1440@165",
+  position = "auto",
+  scale = 1,
+})
