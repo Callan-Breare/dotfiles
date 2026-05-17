@@ -55,9 +55,8 @@ hl.device({
 })
 
 -- Animation controls
-hl.curve("feel", { type = "bezier", points = { { 0.05, 0.9 }, { 0.1, 1 } } })
-
+hl.curve("feel", { type = "bezier", points = { { 0, 1 }, { 0, 1 } } })
 hl.animation({ leaf = "global", enabled = true, speed = 5, bezier = "feel" })
-hl.animation({ leaf = "windows", enabled = true, speed = 5, bezier = "feel", style = "popin" })
-hl.animation({ leaf = "layers", enabled = true, speed = 5, bezier = "feel", style = "popin" })
+hl.animation({ leaf = "windows", enabled = true, speed = 5, bezier = "feel", style = "popin 80%" })
+hl.animation({ leaf = "layers", enabled = false })
 hl.animation({ leaf = "workspaces", enabled = true, speed = 5, bezier = "feel" })

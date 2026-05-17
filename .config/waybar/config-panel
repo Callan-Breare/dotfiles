@@ -13,15 +13,13 @@
     "modules-left": [
       "group/startmenu",
       "hyprland/workspaces",
-      //"hyprland/window",
-      //"group/quicklinks",
       "wlr/taskbar",
-      ],
+    ],
 
     // Modules Centre
     "modules-center": [
       "clock",
-      ],
+    ],
 
     //Modules Right
     "modules-right": [
