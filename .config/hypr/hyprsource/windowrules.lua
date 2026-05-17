@@ -1,4 +1,4 @@
 hl.windowrule({
-    rule = "fullscreen on",
+    rule = "fullscreen",
     window = "^(org.vinegarhq.Sober)$"
 })
