@@ -54,24 +54,10 @@ hl.device({
 	sensitivity = -0.5,
 })
 
--- Animation style
-hl.curve("quick", { type = "bezier", points = { { 0.05, 0.9 }, { 0.1, 1.05 } } })
+-- Animation controls
+hl.curve("feel", { type = "bezier", points = { { 0.05, 0.9 }, { 0.1, 1 } } })
 
--- Animation objects
-hl.animation({ leaf = "global", enabled = true, speed = 10, bezier = "quick" })
-hl.animation({ leaf = "border", enabled = true, speed = 5.39, bezier = "quick" })
-hl.animation({ leaf = "windows", enabled = true, speed = 4.79, bezier = "quick" })
-hl.animation({ leaf = "windowsIn", enabled = true, speed = 4.1, bezier = "quick", style = "popin 87%" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 1.49, bezier = "quick", style = "popin 87%" })
-hl.animation({ leaf = "fadeIn", enabled = true, speed = 1.73, bezier = "quick" })
-hl.animation({ leaf = "fadeOut", enabled = true, speed = 1.46, bezier = "quick" })
-hl.animation({ leaf = "fade", enabled = true, speed = 3.03, bezier = "quick" })
-hl.animation({ leaf = "layers", enabled = true, speed = 3.81, bezier = "quick" })
-hl.animation({ leaf = "layersIn", enabled = true, speed = 4, bezier = "quick", style = "fade" })
-hl.animation({ leaf = "layersOut", enabled = true, speed = 1.5, bezier = "quick", style = "fade" })
-hl.animation({ leaf = "fadeLayersIn", enabled = true, speed = 1.79, bezier = "quick" })
-hl.animation({ leaf = "fadeLayersOut", enabled = true, speed = 1.39, bezier = "quick" })
-hl.animation({ leaf = "workspaces", enabled = true, speed = 1.94, bezier = "quick", style = "fade" })
-hl.animation({ leaf = "workspacesIn", enabled = true, speed = 1.21, bezier = "quick", style = "fade" })
-hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1.94, bezier = "quick", style = "fade" })
-hl.animation({ leaf = "zoomFactor", enabled = true, speed = 7, bezier = "quick" })
+hl.animation({ leaf = "global", enabled = true, speed = 5, bezier = "feel" })
+hl.animation({ leaf = "windows", enabled = true, speed = 5, bezier = "feel", style = "popin" })
+hl.animation({ leaf = "layers", enabled = true, speed = 5, bezier = "feel", style = "popin" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 5, bezier = "feel" })
