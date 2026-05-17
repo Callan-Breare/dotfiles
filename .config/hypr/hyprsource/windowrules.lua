@@ -1,4 +1,4 @@
-hl.windowrule({
-    rule = "fullscreen",
-    window = "^(org.vinegarhq.Sober)$"
+hl.window_rule({
+    match = { class = "^(org.vinegarhq.Sober)$" },
+    fullscreen = true
 })
