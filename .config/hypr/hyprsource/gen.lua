@@ -27,7 +27,7 @@ hl.config({
 		allow_tearing = false,
 	},
 
-	-- Decoration settings (blur, rounding, shadows commented)
+	-- Decoration settings (blur, rounding)
 	decoration = {
 		rounding = 5,
 		blur = {
@@ -44,7 +44,7 @@ hl.config({
 
 	-- Miscellaneous settings
 	misc = {
-		force_default_wallpaper = 1, -- 0 or 1
+		force_default_wallpaper = 1,
 		disable_autoreload = false,
 	},
 })
@@ -54,7 +54,7 @@ hl.device({
 	sensitivity = -0.5,
 })
 
--- Added missing default bezier (used by the first animation)
+-- Animation controls
 hl.curve("default", { type = "bezier", points = { { 0, 0 }, { 1, 1 } } })
 hl.curve("easeOutQuint", { type = "bezier", points = { { 0.23, 1 }, { 0.32, 1 } } })
 hl.curve("easeInOutCubic", { type = "bezier", points = { { 0.65, 0.05 }, { 0.36, 1 } } })

@@ -20,7 +20,7 @@ hl.bind("SUPER + escape", hl.dsp.exec_cmd(systemMonitor))
 hl.bind("SUPER + Q", hl.dsp.exec_cmd(terminal))
 hl.bind("SUPER + E", hl.dsp.exec_cmd(fileManager))
 
--- Launch Menus (fixed separator)
+-- Launch Menus
 hl.bind("SUPER + R", hl.dsp.exec_cmd(menu))
 hl.bind("SUPER + I", hl.dsp.exec_cmd("$HOME/.config/hypr/scripts/waybar/load-waybar.sh"))
 hl.bind(
@@ -30,7 +30,7 @@ hl.bind(
 	)
 )
 
--- Volume control – already correct
+-- Volume control
 hl.bind(
 	"XF86AudioLowerVolume",
 	hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%- && " .. vol_change),
@@ -47,10 +47,10 @@ hl.bind(
 	{ locked = true, repeating = true }
 )
 
--- Lock Screen (fixed separator)
+-- Lock Screen
 hl.bind("SUPER + L", hl.dsp.exec_cmd("/usr/lib/kscreenlocker_greet --immediateLock"))
 
--- Screenshotting (fixed separator)
+-- Screenshotting
 hl.bind(
 	"SUPER + SHIFT + S",
 	hl.dsp.exec_cmd(
@@ -68,22 +68,22 @@ hl.bind("SUPER + right", hl.dsp.focus({ direction = "right" }))
 hl.bind("SUPER + up", hl.dsp.focus({ direction = "up" }))
 hl.bind("SUPER + down", hl.dsp.focus({ direction = "down" }))
 
--- Switch workspaces (fixed separator and dispatcher)
+-- Switch workspaces
 for i = 1, 9 do
 	hl.bind("SUPER + " .. i, hl.dsp.focus({ workspace = i }))
 end
 hl.bind("SUPER + 0", hl.dsp.focus({ workspace = 10 }))
 
--- Move window to workspace (fixed separator and dispatcher)
+-- Move window to workspace
 for i = 1, 9 do
 	hl.bind("SUPER + SHIFT + " .. i, hl.dsp.window.move({ workspace = i }))
 end
 hl.bind("SUPER + SHIFT + 0", hl.dsp.window.move({ workspace = 10 }))
 
--- Scroll through workspaces with Shift + left/right (fixed separator and dispatcher)
+-- Scroll through workspaces with Shift + left/right
 hl.bind("SUPER + SHIFT + right", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind("SUPER + SHIFT + left", hl.dsp.focus({ workspace = "e-1" }))
 
--- Mouse bindings (fixed separator and dispatchers)
+-- Mouse bindings
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })

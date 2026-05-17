@@ -1,16 +1,16 @@
--- Clipboard Management (should run only once at startup)
+-- Clipboard Management
 hl.on("hyprland.start", function()
 	hl.exec_cmd("rm -f ~/.cache/cliphist/db")
 	hl.exec_cmd("wl-clip-persist --clipboard both")
 	hl.exec_cmd("wl-paste --type text --watch cliphist store")
 	hl.exec_cmd("wl-paste --type image --watch cliphist store")
-	-- GTK settings via gsettings (also once)
+	-- GTK settings via gsettings
 	hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme 'Breeze'")
 	hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'")
 	hl.exec_cmd("gsettings set org.gnome.desktop.interface icon-theme 'Papirus'")
 end)
 
--- Environment variables (can stay – these are idempotent)
+-- Environment variables
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_THEME", "breeze_cursors")
 hl.env("HYPRCURSOR_SIZE", "24")
