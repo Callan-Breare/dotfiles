@@ -5,29 +5,27 @@
 }
 {
     "label" : "hibernate",
-    "action" : "systemctl hibernate",
+    "action" : "hyprshutdown --post-cmd 'systemctl hibernate'",
     "keybind" : "h"
 }
-
 {
     "label" : "shutdown",
-    "action" : "systemctl poweroff",
+    "action" : "hyprshutdown --post-cmd 'systemctl poweroff'",
     "keybind" : "s"
 }
-
 {
     "label" : "logout",
-    "action" : "loginctl terminate-user $USER",
+    "action" : "hyprshutdown",
     "keybind" : "e"
 }
 {
     "label" : "reboot",
-    "action" : "systemctl reboot",
+    "action" : "hyprshutdown --post-cmd 'systemctl reboot",
     "keybind" : "r"
 }
 {
     "label" : "suspend",
-    "action" : "systemctl suspend",
+    "action" : "/usr/lib/kscreenlocker_greet --immediateLock && systemctl suspend",
     "keybind" : "u"
 }
 
