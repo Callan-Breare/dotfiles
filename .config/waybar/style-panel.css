@@ -192,9 +192,15 @@ tooltip {
 #pulseaudio {
   color: #61afef;
   padding: 0px 8px;
+  padding-right: 20px;
 }
 
 #custom-brightness {
+  color: orange;
+  padding: 0px 8px;
+}
+
+#custom-hyprsunset {
   color: orange;
   padding: 0px 8px;
 }

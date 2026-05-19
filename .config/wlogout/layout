@@ -20,7 +20,7 @@
 }
 {
     "label" : "reboot",
-    "action" : "hyprshutdown --post-cmd 'systemctl reboot",
+    "action" : "hyprshutdown --post-cmd 'systemctl reboot'",
     "keybind" : "r"
 }
 {

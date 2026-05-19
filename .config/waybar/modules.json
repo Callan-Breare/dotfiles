@@ -9,6 +9,7 @@
       //"cpu",
       //"memory",
       "custom/brightness",
+      "custom/hyprsunset",
     ],
     
   },
@@ -117,6 +118,13 @@
     "on-click-right": "exec $HOME/Scripts/System/Brightness/brightness_70.sh",
   },
 
+  "custom/hyprsunset": {
+    "exec": "$HOME/.config/waybar/scripts/hyprsunset.sh",
+    "return-type": "json",
+    "interval": 300,
+    "format": "{}",
+    "on-click": "$HOME/.config/waybar/scripts/hyprsunset-toggle.sh",
+  },
   // Hyprland Modules
 //  "hyprland/workspaces": {
 //  },
@@ -136,7 +144,7 @@
   },
 
   "custom/update": {
-    "format": "\u21A5",
+    "format": "\u2191",
     "tooltip-format": "<tt>Trigger System Wide Update</tt>",
     "on-click": "kitty $HOME/Scripts/updates/update.sh" ,
   },
