@@ -23,27 +23,16 @@ hl.bind("SUPER + E", hl.dsp.exec_cmd(fileManager))
 -- Launch Menus
 hl.bind("SUPER + R", hl.dsp.exec_cmd(menu))
 hl.bind("SUPER + I", hl.dsp.exec_cmd("$HOME/.config/hypr/scripts/waybar/load-waybar.sh"))
-hl.bind(
-	"SUPER + V",
-	hl.dsp.exec_cmd(
-		"cliphist list | wofi --dmenu --allow-images --conf=$HOME/.config/wofi/clipboard_config --style=default | cliphist decode | wl-copy"
-	)
-)
+hl.bind("SUPER + V", hl.dsp.exec_cmd("cliphist list | wofi --dmenu --allow-images --conf=$HOME/.config/wofi/clipboard_config --style=default | cliphist decode | wl-copy"))
 
 -- Volume control
-hl.bind(
-	"XF86AudioLowerVolume",
-	hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%- && " .. vol_change),
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%- && " .. vol_change),
 	{ locked = true, repeating = true }
 )
-hl.bind(
-	"XF86AudioMute",
-	hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && " .. vol_change),
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && " .. vol_change),
 	{ locked = true }
 )
-hl.bind(
-	"XF86AudioRaiseVolume",
-	hl.dsp.exec_cmd("$HOME/.config/hypr/scripts/media_control/volume_up.sh && " .. vol_change),
+hl.bind("XF86AudioRaiseVolume",	hl.dsp.exec_cmd("$HOME/.config/hypr/scripts/media_control/volume_up.sh && " .. vol_change),
 	{ locked = true, repeating = true }
 )
 
@@ -51,16 +40,8 @@ hl.bind(
 hl.bind("SUPER + L", hl.dsp.exec_cmd("/usr/lib/kscreenlocker_greet --immediateLock"))
 
 -- Screenshotting
-hl.bind(
-	"SUPER + SHIFT + S",
-	hl.dsp.exec_cmd(
-		'grim -g "$(slurp)" - | tee $HOME/Pictures/Screenshots/screenshot_$(date +"%Y|%m|%d_%H:%M:%S").png | wl-copy'
-	)
-)
-hl.bind(
-	"Print",
-	hl.dsp.exec_cmd('grim - | tee $HOME/Pictures/Screenshots/screenshot_$(date +"%Y|%m|%d_%H:%M:%S").png | wl-copy')
-)
+hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd('grim -g "$(slurp)" - | tee $HOME/Pictures/Screenshots/screenshot_$(date +"%Y|%m|%d_%H:%M:%S").png | wl-copy'))
+hl.bind("Print", hl.dsp.exec_cmd('grim - | tee $HOME/Pictures/Screenshots/screenshot_$(date +"%Y|%m|%d_%H:%M:%S").png | wl-copy'))
 
 -- Move focus – already correct
 hl.bind("SUPER + left", hl.dsp.focus({ direction = "left" }))

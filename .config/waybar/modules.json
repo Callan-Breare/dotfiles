@@ -98,8 +98,8 @@
         "default": ["", ""]
     },
     "scroll-step": 2,
-    "on-click": "exec $HOME/Scripts/System/Audio/ChangeAudioOutput.sh Navi",
-    "on-click-right": "exec $HOME/Scripts/System/Audio/ChangeAudioOutput.sh Ryzen",
+    "on-click": "exec $HOME/.config/waybar/scripts/audio/ChangeAudioOutput.sh Navi",
+    "on-click-right": "exec $HOME/.config/waybar/scripts/audio/ChangeAudioOutput.sh Ryzen",
   },
   "clock": {
     "format": "{:%d %B %H:%M}",
@@ -109,21 +109,21 @@
 
   "custom/brightness": {
     "format": "{}",
-    "exec": "$HOME/Scripts/System/Brightness/current_brightness.sh",
+    "exec": "$HOME/.config/waybar/scripts/brightness/current_brightness.sh",
     "interval": 1,
     "return-type": "json",
-    "on-scroll-up": "exec $HOME/Scripts/System/Brightness/brightness_up.sh",
-    "on-scroll-down": "exec $HOME/Scripts/System/Brightness/brightness_down.sh",
-    "on-click": "exec $HOME/Scripts/System/Brightness/brightness_100.sh",
-    "on-click-right": "exec $HOME/Scripts/System/Brightness/brightness_70.sh",
+    "on-scroll-up": "exec $HOME/.config/waybar/scripts/brightness/brightness_up.sh",
+    "on-scroll-down": "exec $HOME/.config/waybar/scripts/brightness/brightness_down.sh",
+    "on-click": "exec $HOME/.config/waybar/scripts/brightness/brightness_100.sh",
+    "on-click-right": "exec $HOME/.config/waybar/scripts/brightness/brightness_70.sh",
   },
 
   "custom/hyprsunset": {
-    "exec": "$HOME/.config/waybar/scripts/hyprsunset.sh",
+    "exec": "$HOME/.config/waybar/scripts/nightlight/hyprsunset.sh",
     "return-type": "json",
     "interval": 300,
     "format": "{}",
-    "on-click": "$HOME/.config/waybar/scripts/hyprsunset-toggle.sh",
+    "on-click": "$HOME/.config/waybar/scripts/nightlight/hyprsunset-toggle.sh",
   },
   // Hyprland Modules
 //  "hyprland/workspaces": {
