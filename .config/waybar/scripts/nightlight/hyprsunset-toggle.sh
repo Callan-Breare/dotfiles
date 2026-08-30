@@ -7,5 +7,3 @@ if systemctl --user is-active --quiet "$SERVICE"; then
 else
   systemctl --user start "$SERVICE"
 fi
-
-$HOME/.config/waybar/scripts/hyprsunset.sh

@@ -15,7 +15,11 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:/home/cbreare/.cargo/bin"
+export HSA_OVERRIDE_GFX_VERSION=11.0.0
+export ROCR_VISIBLE_DEVICES=0
+export OLLAMA_MODELS="$HOME/.ollama/models"
 alias n="nvim"
+alias cd="z"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -86,6 +90,14 @@ plugins=(
 git
 zsh-syntax-highlighting
 zsh-autosuggestions
+archlinux
+python
+sudo
+command-not-found
+rust
+zsh-interactive-cd
+emoji
+kitty
 )
 
 source $ZSH/oh-my-zsh.sh
